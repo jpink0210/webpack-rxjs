@@ -132,7 +132,7 @@ const config = {
             { from: 'assets', to: 'assets' },
         ]),
     ]
-    // ,performance: { hints: false }
+    ,performance: { hints: false }
 };
 
 module.exports = config;

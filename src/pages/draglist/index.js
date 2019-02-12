@@ -9,7 +9,7 @@ class DragList extends React.Component {
   render() {
     return(
       <div>
-          <h1>Hi, this is DragList Page</h1>
+          <h1>Hi, this is DragList Page(點拉拖曳)</h1>
           {
             this.props.DragList.list.map((element, index) => 
               <Card key={"drag" + index} 
