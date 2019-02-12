@@ -11,13 +11,22 @@ const config = {
         filename: 'js/[name].js?[hash:8]',
         publicPath: process.env.NODE_ENV === "development" ? "/" : "./"
     },
+    performance: {
+        hints: "warning", // 枚举
+        maxAssetSize: 300000, // 整数类型（以字节为单位）
+        maxEntrypointSize: 500000, // 整数类型（以字节为单位）
+        assetFilter: function(assetFilename) {
+        // 提供资源文件名的断言函数
+            return assetFilename.endsWith('.css') || assetFilename.endsWith('.js');
+        }
+    },
     optimization: {
         splitChunks: {
             cacheGroups: {
                 vendor: {
                     test: /node_modules/,
                     name: 'vendor',
-                    chunks: 'initial',
+                    chunks: 'all',
                     enforce: true
                 }
             }
@@ -132,7 +141,6 @@ const config = {
             { from: 'assets', to: 'assets' },
         ]),
     ]
-    ,performance: { hints: false }
 };
 
 module.exports = config;
