@@ -28,12 +28,12 @@ class Balls extends React.Component {
           <h1>hi, this is Balls Page</h1>
           <div>
 
-          <img width="50px" src="/src/images/dog.png" alt="" />
-          <img width="50px" src="/src/images/whale.png" alt="" />
-          <img width="50px" src="/src/images/eagle.png" alt="" />
-          <img width="50px" src="/src/images/giraffe.png" alt="" />
-          <img width="50px" src="/src/images/kangaroo.png" alt="" />
-          <img width="50px" src="/src/images/cat.png" alt="" />
+          <img width="50px" src="/assets/images/dog.png" alt="" />
+          <img width="50px" src="/assets/images/whale.png" alt="" />
+          <img width="50px" src="/assets/images/eagle.png" alt="" />
+          <img width="50px" src="/assets/images/giraffe.png" alt="" />
+          <img width="50px" src="/assets/images/kangaroo.png" alt="" />
+          <img width="50px" src="/assets/images/cat.png" alt="" />
 
           </div>
 
