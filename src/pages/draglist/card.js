@@ -1,6 +1,6 @@
 import React from 'react';
-import Rx from 'rxjs/Rx';
-import { Observable} from 'rxjs/Observable';
+import { Observable } from 'rxjs/Rx';
+import 'rxjs/add/observable/fromEvent';
 
 
 class Card extends React.Component {

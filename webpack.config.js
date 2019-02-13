@@ -61,6 +61,7 @@ const config = {
     resolve: {
         modules: [
             path.resolve('src'),
+            path.resolve('src/images'),
             path.resolve('node_modules')
         ],
         extensions: ['.js']
