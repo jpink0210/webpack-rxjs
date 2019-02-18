@@ -3,44 +3,44 @@ const defaultList = {
     list : [
         {
             name: 'dog',
-            img: '/assets/images/dog.png',
+            img: 'dog.png',
             left: 155,
             top: 313
         },
         {
             name: 'cat',
-            img: '/assets/images/cat.png',
+            img: 'cat.png',
             left: 300,
             top: 370
         },
         {
             name: 'whale',
-            img: '/assets/images/whale.png',
+            img: 'whale.png',
             left: 417,
             top: 239
         },
         {
             name: 'eagle',
-            img: '/assets/images/eagle.png',
+            img: 'eagle.png',
             left: 592,
             top: 490
         },
         {
             name: 'giraffe',
-            img: '/assets/images/giraffe.png',
+            img: 'giraffe.png',
             left: 871,
             top: 381
         },
         {
             name: 'kangaroo',
-            img: '/assets/images/kangaroo.png',
+            img: 'kangaroo.png',
             left: 1045,
             top: 258
         },
         
         {
             name: 'fox',
-            img: '/assets/images/fox.png',
+            img: 'fox.png',
             left: 723,
             top: 323
         },

@@ -43,7 +43,7 @@ class Card extends React.Component {
         <div
           className="dragImg"
           style={{
-            backgroundImage: `url(${this.props.data.img})`
+            backgroundImage: `url(${require('../../images/'+this.props.data.img)})`
           }}
         >
         </div>

@@ -136,7 +136,8 @@ const config = {
         new HtmlWebpackPlugin({
             title: 'Webpack-Rx Demo',
             filename: 'index.html',
-            template: 'html/index.html'
+            template: 'html/index.html',
+            favicon: 'assets/icons8-w-480.ico'
         }),
         new CopyWebpackPlugin([
             { from: 'assets', to: 'assets' },

@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Rx from 'rxjs/Rx';
-import { Observable} from 'rxjs/Observable';
+import { Observable } from 'rxjs/Rx';
+import 'rxjs/add/observable/fromEvent';
 
 class Balls extends React.Component {
   componentDidMount(){
@@ -27,13 +27,14 @@ class Balls extends React.Component {
       <div className="balls">
           <h1>hi, this is Balls Page</h1>
           <div>
-
-          <img width="50px" src="/assets/images/dog.png" alt="" />
-          <img width="50px" src="/assets/images/whale.png" alt="" />
-          <img width="50px" src="/assets/images/eagle.png" alt="" />
-          <img width="50px" src="/assets/images/giraffe.png" alt="" />
-          <img width="50px" src="/assets/images/kangaroo.png" alt="" />
-          <img width="50px" src="/assets/images/cat.png" alt="" />
+       
+          {
+            this.props.DragList.list.map((element, index) => 
+              <img key={"drag" + index} 
+              width="50px"
+              src={require('../../images/' + element.img)} alt=""  />
+            )
+          }
 
           </div>
 
@@ -44,6 +45,7 @@ class Balls extends React.Component {
 
 const mapStateToProps = state => ({
   balls: state.Balls,
+  DragList: state.DragList,
 });
 
 
